@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS If Else Example</title>
+</head>
+<body>
+    <h2>JavaScript If...Else Example</h2>
+
+    <p id="if1"></p>
+    <p id="if2"></p>
+    <p id="if3"></p>
+
+    <script>
+    let age = 20;
+
+    // Simple if
+    if (age >= 18) {
+        document.getElementById("if1").innerText = "You are an adult.";
+    }
+
+    // If...else
+    let time = 15; // 24-hour format
+    if (time < 12) {
+        document.getElementById("if2").innerText = "Good Morning!";
+    } else {
+        document.getElementById("if2").innerText = "Good Afternoon!";
+    }
+
+    // if...else if...else
+    let mark = 85;
+    if (mark >= 90) {
+        document.getElementById("if3").innerText = "Grade: A";
+    } else if (mark >= 75) {
+        document.getElementById("if3").innerText = "Grade: B";
+    } else if (mark >= 50) {
+        document.getElementById("if3").innerText = "Grade: C";
+    } else {
+        document.getElementById("if3").innerText = "Grade: F";
+    }
+</script>
+
+</body>
+</html>
