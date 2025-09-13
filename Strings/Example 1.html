@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Strings vs String Template</title>
+</head>
+<body>
+    <h2>JavaScript Strings</h2>
+    <p id="normal"></p>
+
+    <h2>JavaScript Strings Templetes</h2>
+    <p id="templete"></p>
+
+    <script>
+        // JS normal Strings
+        let firstname = "Pankaj";
+        let lastname = "Jadhav";
+        let fullname = "My name is " + firstname + " " + lastname + " .";   // concatentation
+        document.getElementById("normal").innerText = fullname;
+
+        // JS Strings Templete (Templete literals with backticks' ')
+        let age = 22;
+        let city = "Kolhapur";
+        let intro = `Hello, my name is ${firstname} ${lastname}. I am ${age} years old and I live in ${city}.`;
+        document.getElementById("templete").innerText = intro;
+    </script>
+</body>
+</html>
