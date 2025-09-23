@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Switch Example</h2>
+
+    <P id="switch1"></P>
+    <p id="switch2"></p>
+
+    <script>
+        //Example 1: Days of the week
+        let day = 3;
+        let datName = 3;
+        switch (day) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "wednesday";
+                break;
+            case 4:
+                dayName = "thursday";
+                break;
+            case 5:
+                dayName = "friday";
+                break;
+            case 6:
+                dayName = "saturday";
+                break;
+            case 7:
+                dayName = "sunday";
+                break;
+              default:
+                dayName = "Invalid Day";
+        }
+
+        document.getElementById("switch1").innerText = "Day is: " + dayName;
+
+        // Example 2: Grade system
+        let grade = "B";
+        let message;
+        switch (grade) {
+            case "A":
+                message = "Excellent!";
+                break;
+            case "B":
+                message = "Good Job!";
+                break;
+            case "C":
+                message = "Fair.";
+                break;
+            case "D":
+                message = "Needs Improvement.";
+                break;
+            case "F":
+                message = "Fail.";
+                break;
+             default:
+                message = "Invalid Grade.";
+        }
+        document.getElementById("switch2").innerText = "Grade Result:" + message;
+    </script>
+</body>
+</html>
