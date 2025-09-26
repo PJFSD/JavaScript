@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment Operators in JavaScript</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+    
+    <h2>JavaScript Assingment Operators</h2>
+    <pre id="output" style="background: #f4f4f4; padding: 15px; border-radius: 8px;"></pre>
+
+    <script>
+        let log = "";     // to collect output
+
+        function show(title, value) {
+            log += title + " → " + value + "\n";
+        }
+
+        let x;
+
+        // Simple Assignment
+        x = 10;
+        show("x = 10", x);
+
+        //Add and Assign
+        x = 5;
+        x += 3;
+        show("x += 3", x);
+
+        // Subtract and Assign
+        x = 10;
+        x -= 4;
+        show("x -= 4", x)
+
+        // Multiply and Assign
+        x = 7;
+        x *= 2;
+        show("x *= 2", x);
+
+        // Divide and Assign
+        x = 20;
+        x /= 5;
+        show("x /= 5", x);
+
+        // Remainder and Assign
+        x = 17;
+        x %= 5;
+        show("x %= 5", x)
+
+        // Exponentiation and Assign
+        x = 3;
+        x **= 2;
+        show(x **= 2, x);
+
+        // Bitwise AND and Assign
+        x = 6;
+        x |= 3;
+        show("x |= 3", x);
+
+        // Bitwise OR and Assign
+        x = 6;
+        x &= 3;
+        show("x &= 3", x);
+
+        // Bitwise XOR and Assign
+        x = 6;
+        x ^= 3;
+        show("x ^= 3", x);
+
+        // Left Shift and Assign
+        x = 5;
+        x <<= 3;
+        show("x <<= 2", x);
+
+        // Right Shift and Assign
+        x = 8;
+        x >>= 2;
+        show("x >>= 2", x);
+
+        // Unsigned Right Shift and Assign
+        x = -8;
+        x >>>= 2;
+        show("x >>>2", x);
+
+        // Show all result
+        document.getElementById("output").innerText = log;
+    </script>
+</body>
+</html>
