@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Promise Button Color Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(163, 95, 95);
+            margin: 20px auto;
+            transition: background-color 0.5s;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Promise Example</h2>
+    <div id="box"></div>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+
+            // Create Promise
+            let colorPromise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Red");
+                }, 1000);      // 1 secend delay
+            });
+
+            // Use Promise
+            colorPromise.then((color) => {
+                document.getElementById("box").style.backgroundColor = color;
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>
